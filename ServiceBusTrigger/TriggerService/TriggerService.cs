@@ -42,7 +42,6 @@ namespace TriggerService
         /// <returns>A collection of listeners.</returns>
         protected override IEnumerable<ServiceInstanceListener> CreateServiceInstanceListeners()
         {
-            // Test first, then look at passing in a handler
             Action<BrokeredMessage> testAction = Test;
             yield return new ServiceInstanceListener(context => new ServiceBusQueueListener(testAction, _connectionString, _queueName), "StatelessService-ServiceBusQueueListener");
         }
