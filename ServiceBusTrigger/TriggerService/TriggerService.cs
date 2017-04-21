@@ -10,13 +10,6 @@ using TriggerService.ServiceListeners;
 using Microsoft.ServiceBus.Messaging;
 using System.Diagnostics;
 
-/// <summary>
-/// When writing the blog post, don't forget to mention installing the sdk and tools
-/// and running Powershell in admin and running the command so you can debug with F5
-/// -- Look at reading variables from the config
-/// </summary>
-
-
 namespace TriggerService
 {
     /// <summary>
