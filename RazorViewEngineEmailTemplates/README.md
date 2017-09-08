@@ -1,6 +1,6 @@
 # Razor View Engine Email Templates Example
 This is an example of how to use the RazorViewEngine to render .cshtml files in order to get the string output.
-The blog post this code accompanies can be found here: <TBD>
+The blog post this code accompanies can be found here: https://iamrufio.com/2017/09/08/rendering-emails-with-razorviewengine-in-net-core-2-0/
 
 ### Basics
 This solution comprises of two projects:
