@@ -1,0 +1,22 @@
+version: '3.3'
+services:
+  haproxy:
+    image: haproxy
+    volumes: 
+      - ./haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg
+    links:
+      - web
+      - api
+    ports:
+      - "9200:9200"
+      - "9201:9201"
+  web:
+    build: ./MicroWeb
+    expose:
+      - "80"
+    environment:
+      - baseAddress=http://docker.for.mac.localhost:9201/
+  api:
+    build: ./MicroApi
+    expose:
+      - "80"
