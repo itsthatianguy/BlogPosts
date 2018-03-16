@@ -1,0 +1,11 @@
+service: HelloNode
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  stage: local
+  environment: ${file(env.${self:provider.stage}.yml)}
+
+functions:
+  NodeFunction:
+    handler: handler.hello

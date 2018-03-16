@@ -1,0 +1,14 @@
+service: HelloJava
+
+provider:
+  name: aws
+  runtime: java8
+  stage: local
+  environment: ${file(env.${self:provider.stage}.yml)}
+
+package:
+  artifact: target/hello-dev.jar
+
+functions:
+  JavaFunction:
+    handler: com.serverless.Handler

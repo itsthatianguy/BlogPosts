@@ -1,0 +1,11 @@
+service: HelloPython
+
+provider:
+  name: aws
+  runtime: python3.6
+  stage: local
+  environment: ${file(env.${self:provider.stage}.yml)}
+
+functions:
+  PythonFunction:
+    handler: handler.hello
