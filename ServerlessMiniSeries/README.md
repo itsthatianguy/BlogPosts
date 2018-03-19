@@ -7,6 +7,7 @@ Each of the individual blog posts will contain all code in a separate directory 
 As I publish new posts, the code will be added in a new numerically named folder.
 
 ## Part 1
+[The blog post for part 1 can be found here](https://iamrufio.com/2018/03/19/local-serverless-development-part-1-invoking-lambdas-locally/)
 
 Part 1 covers invoking functions locally.  
 [The code can be found here](https://github.com/ianrufus/BlogPosts/tree/master/ServerlessMiniSeries/1)
