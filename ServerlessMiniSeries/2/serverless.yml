@@ -1,0 +1,24 @@
+service: HelloGoodbyeApi
+
+provider:
+  name: aws
+  stage: local
+  environment: ${file(env.${self:provider.stage}.yml)}
+  runtime: python3.6
+
+functions:
+  HelloFunction:
+    handler: HelloPython/handler.hello
+    events:
+      - http:
+          path: hello
+          method: get
+  GoodbyeFunction:
+    handler: GoodbyePython/handler.goodbye
+    events:
+      - http:
+          path: goodbye
+          method: get
+
+plugins:
+  - serverless-sam

@@ -1,0 +1,15 @@
+{
+  "name": "2",
+  "version": "1.0.0",
+  "description": "This folder contains the code for the second post in my Local Serverless Development mini-series.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "aws-sam-local": "^0.2.8",
+    "serverless-sam": "0.0.5"
+  }
+}
