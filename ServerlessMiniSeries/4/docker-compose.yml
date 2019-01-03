@@ -1,0 +1,28 @@
+version: "3.5"
+
+networks:
+  compose_network:
+    name: custom_network
+
+services:
+  localstack:
+    image: localstack/localstack
+    ports:
+      - "4567-4582:4567-4582"
+      - "8080:8080"
+    environment:
+      - SERVICES=s3,dynamodb
+    networks:
+      - compose_network
+  api:
+    image: cnadiminti/aws-sam-local
+    links:
+      - localstack
+    ports:
+      - "3000:3000"
+    volumes:
+      - $PWD:/var/opt
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - compose_network
+    command: local start-api --docker-volume-basedir "$PWD" --host 0.0.0.0 --docker-network custom_network

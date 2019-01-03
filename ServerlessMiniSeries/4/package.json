@@ -1,7 +1,7 @@
 {
   "name": "2",
   "version": "1.0.0",
-  "description": "This folder contains the code for the third post in my Local Serverless Development mini-series.",
+  "description": "This folder contains the code for the fourth post in my Local Serverless Development mini-series.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
