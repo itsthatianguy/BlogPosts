@@ -1,6 +1,6 @@
 # NodeJS CLI Tool with Commander
 This is an example of a CLI tool written with Node JS and [Commander](https://www.npmjs.com/package/commander)
-The blog post this code accompanies can be found here: [https://iamrufio.com/blog/2019/09/node-cli-commander/]()
+The blog post this code accompanies can be found here: [https://iamrufio.com/blog/2019/09/node-cli-commander/](https://iamrufio.com/blog/2019/09/node-cli-commander/)
 
 ### Basics
 The `index.js` file lays out the root commands for the application.  
