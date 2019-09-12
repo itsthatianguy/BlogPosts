@@ -22,7 +22,7 @@ serverless --version
 
 To invoke, navigate to the root directory of one of the functions and run the command:
 ```
-serverless invoke local --path event.json -- function PythonFunction
+serverless invoke local --path event.json --function PythonFunction
 ```
 Replacing `PythonFunction` with the name of the chosen function.  
 NOTE: The Java code will need packaging first
