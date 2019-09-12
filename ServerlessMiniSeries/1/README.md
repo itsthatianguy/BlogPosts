@@ -25,4 +25,4 @@ To invoke, navigate to the root directory of one of the functions and run the co
 serverless invoke local --path event.json --function PythonFunction
 ```
 Replacing `PythonFunction` with the name of the chosen function.  
-NOTE: The Java code will need packaging first
+NOTE: The Java code will need packaging first. Make sure you have Java and Maven install, then run `mvn package` before running the Java function.
