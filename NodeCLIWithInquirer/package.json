@@ -1,0 +1,16 @@
+{
+  "name": "nodecli",
+  "version": "1.0.0",
+  "description": "Sample Node CLI project with Inquirer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rufio",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.3.3",
+    "commander": "^3.0.1",
+    "inquirer": "^7.0.0"
+  }
+}
