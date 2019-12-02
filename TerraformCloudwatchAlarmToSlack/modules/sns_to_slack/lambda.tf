@@ -19,7 +19,7 @@ data "archive_file" "sns_notify_slack_code" {
 resource "aws_lambda_function" "sns_notify_slack_lambda" {
   filename         = data.archive_file.sns_notify_slack_code.output_path
   function_name    = "${var.application}-notify-slack-${var.environment}"
-  role             = ""
+  role             = aws_iam_role.sns_notify_slack_lambda_role.arn
   handler          = "lambda.lambda_handler"
   source_code_hash = data.archive_file.sns_notify_slack_code.output_base64sha256
   runtime          = "python3.6"
