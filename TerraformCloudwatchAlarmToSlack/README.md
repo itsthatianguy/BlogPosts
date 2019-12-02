@@ -1,7 +1,7 @@
 # CloudWatch Alarms Posting to Slack using Terraform
 
 This is an example of how to create CloudWatch alarms that, when triggered, will send a message to SNS, which invokes a Lambda, which posts the message to a configured Slack webhook.
-The blog post this code accompanies can be found here: https://iamrufio.com/2019/12/02/terraform-cloudwatch-to-slack/
+The blog post this code accompanies can be found here: https://iamrufio.com/blog/2019/12/terraform-cloudwatch-to-slack/
 
 ## Requirements
 
