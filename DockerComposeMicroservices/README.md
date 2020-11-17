@@ -1,6 +1,6 @@
 # Debugging Microservices with Docker Compose and HAProxy Example
 This is an example of how I've been using Docker Compose and HAProxy to debug microservices, only having to run the components I'm interested in outside of the Docker Compose.
-The blog post this code accompanies can be found here: https://iamrufio.com/2017/11/10/debugging-microservices-with-docker-compose-and-haproxy/
+The blog post this code accompanies can be found here: https://ianrufus.com/2017/11/10/debugging-microservices-with-docker-compose-and-haproxy/
 
 ### Basics
 This solution comprises of three projects:

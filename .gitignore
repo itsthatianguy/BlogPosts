@@ -5,3 +5,5 @@ node_modules/
 .serverless/
 *lock.json
 template.yml
+__pycache__/
+virtualenv/
