@@ -1,0 +1,22 @@
+version: "3.3"
+services:
+  api:
+    build:
+      context: "./api"
+    volumes:
+      - ./api/src:/app/src
+    ports:
+      - 8000:8000
+    command: uvicorn src.main:app --host=0.0.0.0 --reload
+  db:
+    image: "postgres:latest"
+    container_name: "alembic_migration_db"
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_PASSWORD=mysuperpassword
+      - POSTGRES_DB=myawesomedb
+    volumes:
+      - db_data:/var/lib/postgresql/data
+volumes:
+  db_data:
